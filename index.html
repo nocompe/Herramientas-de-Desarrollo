@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">Nova<span>Studio</span></div>
+        <nav>
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#about">Nosotros</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">Diseño moderno • Desarrollo claro</p>
+            <h1>Tu próxima idea merece una presencia digital increíble.</h1>
+            <p class="lead">
+              Creamos experiencias web elegantes, rápidas y funcionales para marcas
+              que quieren destacar en internet.
+            </p>
+            <div class="actions">
+              <a href="#servicios" class="btn primary">Ver servicios</a>
+              <a href="#about" class="btn secondary">Más info</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-top">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="chart">
+              <div class="bar" style="height: 42%"></div>
+              <div class="bar" style="height: 68%"></div>
+              <div class="bar" style="height: 52%"></div>
+              <div class="bar" style="height: 84%"></div>
+              <div class="bar" style="height: 100%"></div>
+              <div class="bar" style="height: 76%"></div>
+            </div>
+            <div class="stats">
+              <div>
+                <strong>+120%</strong>
+                <span>engagement</span>
+              </div>
+              <div>
+                <strong>3x</strong>
+                <span>más tráfico</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="features">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">Servicios</p>
+            <h2>Todo lo que necesitas para crecer</h2>
+          </div>
+
+          <div class="grid">
+            <article class="feature-card">
+              <div class="icon">⚡</div>
+              <h3>Landing Pages</h3>
+              <p>Diseños enfocados en convertir visitas en oportunidades reales.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">🎨</div>
+              <h3>Branding</h3>
+              <p>Identidad visual coherente y memorable para tu negocio.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">📈</div>
+              <h3>Marketing</h3>
+              <p>Estrategias digitales para mejorar visibilidad y resultados.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container about-box">
+          <div>
+            <p class="eyebrow">Nosotros</p>
+            <h2>Simple, rápido y pensado para resultados.</h2>
+          </div>
+          <p>
+            Desde pequeñas marcas hasta proyectos personales, trabajamos con una
+            visión clara: hacer que cada detalle cuente y que tu presencia online
+            genere confianza desde el primer vistazo.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> NovaStudio</p>
+        <button id="messageBtn" class="cta-mini">Haz clic</button>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
